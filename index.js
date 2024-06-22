@@ -37,6 +37,7 @@ let app = express()
 
 // ADD THIS
 var cors = require('cors');
+console.log(cors);
 app.use(cors());
 app.use(express.json())
 app.use('/api/students', studentRoutes)
